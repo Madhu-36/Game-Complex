@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Complex</title>
+    <script src="./Game Complex1_files/saved_resource"></script>
+    
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen"> <div id="messageBox" class="message-box success">Login successful!</div>
+
+    <div id="loginPage" class="flex items-center justify-center min-h-screen p-4 hidden">
+        <video autoplay="" muted="" loop="" playsinline="" id="loginVideo" poster="https://placehold.co/1920x1080/111827/374151?text=Loading+Background...">
+            <source src="https://static.videezy.com/system/resources/previews/000/044/159/original/abstract_background_-_11.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="loginOverlay"></div>
+        <div class="login-content">
+            <h1 class="text-3xl font-bold text-center text-white mb-8">Welcome to Game Complex</h1>
+            <form id="loginForm" novalidate="">
+                 <div class="mb-6">
+                    <label for="username" class="block mb-2 text-sm font-medium text-gray-300">Username or Email</label>
+                    <input type="text" id="username" class="input-field" placeholder="your.email@example.com" required="">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-300">Password</label>
+                    <input type="password" id="password" class="input-field" placeholder="••••••••" required="" aria-describedby="passwordRequirements">
+                    <div id="passwordRequirements" class="password-requirements" role="alert" aria-live="polite">
+                        <div id="req-length" class="valid" data-text="Min. 8 characters"> Min. 8 characters</div>
+                        <div id="req-capital" class="valid" data-text="At least one uppercase letter"> At least one uppercase letter</div>
+                        <div id="req-lower" class="valid" data-text="At least one lowercase letter"> At least one lowercase letter</div>
+                        <div id="req-number" class="valid" data-text="At least one number"> At least one number</div>
+                        <div id="req-special" class="valid" data-text="At least one special character (!@#$%^&amp;*)">At least one special character (!@#$%^&amp;*)</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="mainPage" class="">
+        <header class="bg-gray-900 shadow-md sticky top-0 z-50">
+             <nav class="container mx-auto px-4 py-3 header-nav-container">
+                <a href="file:///C:/Users/MADHU.S/OneDrive/Pictures/Screenshots/Desktop/game%20complex/max_trial.html#" class="header-logo" data-view="all">  <span>Game Complex</span>
+                </a>
+
+                <div class="main-nav">
+                    <ul id="mainNavList">
+                        <li><a href="file:///C:/Users/MADHU.S/OneDrive/Pictures/Screenshots/Desktop/game%20complex/max_trial.html#" data-view="all" class="nav-link">All Games</a></li>
+                        <li class="has-dropdown">
+                             <button type="button" class="nav-link flex items-center" data-view="featured"> Featured <span class="lucide lucide-chevron-down text-xs">
+</span>
+                             </button>
+                             <div class="dropdown-menu" id="featuredGenreDropdown"><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="all-featured">All Featured</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="Action">Action</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="Adventure">Adventure</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="Indie">Indie</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="MMO">MMO</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="Puzzle">Puzzle</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="RPG">RPG</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="Racing">Racing</a><a href="file:///C:/Users/MADHU.S/Downloads/Game%20Complex.html#" class="genre-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white rounded-md" data-genre="Strategy">Strategy</a></div>
+                         </li>
+                         <li><a href="file:///C:/Users/MADHU.S/OneDrive/Pictures/Screenshots/Desktop/game%20complex/max_trial.html#" data-view="topSellers" class="nav-link">Top Sellers</a></li>
+                        <li><a href="file:///C:/Users/MADHU.S/OneDrive/Pictures/Screenshots/Desktop/game%20complex/max_trial.html#" data-view="onSale" class="nav-link">On Sale</a></li>
+                        <li><a href="file:///C:/Users/MADHU.S/OneDrive/Pictures/Screenshots/Desktop/game%20complex/max_trial.html#" data-view="newReleases" class="nav-link active">New Releases</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-actions">
+                    <div class="input-group relative"> <span class="input-icon lucide absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true"></span>
+                        <input type="search" id="searchInput" placeholder="Search Games..." class="input-field pl-10 w-full sm:w-64">
+                    </div>
+                    <button id="logoutButton" class="btn btn-secondary btn-sm flex-shrink-0 logout-button"> <span class="lucide mr-1 text-sm" aria-hidden="true"></span>
+                        Logout
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main id="contentArea" class="container mx-auto px-4 py-8">
+            <div id="allView" class="content-section">
+                 <div class="scroller-showcase">
+                    <h2 class="section-title">Featured Games</h2>
+                    <div class="relative">
+                        <ul id="featuredGamesRow" class="game-row"><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff" alt="Pro Soccer 2025 8" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 8">Pro Soccer 2025 8</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.77
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="8">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(1)" alt="Zombie Outbreak 26" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 26">Zombie Outbreak 26</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="26">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(2)" alt="City Builders 58" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="City Builders 58">City Builders 58</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.68
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="58">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(3)" alt="Cyber Runners 53" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 53">Cyber Runners 53</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $58.70
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="53">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(4)" alt="Pro Soccer 2025 15" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 15">Pro Soccer 2025 15</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $54.05
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="15">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(5)" alt="Cyber Runners 25" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 25">Cyber Runners 25</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $23.65
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$32.75</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="25">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(6)" alt="Block Blitz 48" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 48">Block Blitz 48</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Racing</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $25.85
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$38.12</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="48">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(7)" alt="Dragon&#39;s Hoard 14" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Dragon&#39;s Hoard 14">Dragon's Hoard 14</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $25.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="14">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(8)" alt="Space Tycoon 49" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Space Tycoon 49">Space Tycoon 49</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.86
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="49">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(9)" alt="Pro Soccer 2025 47" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 47">Pro Soccer 2025 47</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $51.56
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="47">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li></ul>
+                        <button class="scroller-button left" aria-label="Scroll Left" data-target="featuredGamesRow"><span class="lucide">&lt;</span></button>
+                        <button class="scroller-button right" aria-label="Scroll Right" data-target="featuredGamesRow"><span class="lucide">&gt;</span></button>
+                    </div>
+                </div>
+                 <div class="scroller-showcase">
+                    <h2 class="section-title">New Releases</h2>
+                     <div class="relative">
+                        <ul id="newReleasesRow" class="game-row"><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(10)" alt="Cyber Runners 44" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 44">Cyber Runners 44</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $53.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="44">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(11)" alt="Cosmic Drift 17" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Cosmic Drift 17">Cosmic Drift 17</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $18.70
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="17">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(12)" alt="Kingdom Fall 6" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 6">Kingdom Fall 6</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.75
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="6">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(13)" alt="Space Tycoon 5" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Space Tycoon 5">Space Tycoon 5</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.63
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff" alt="Pro Soccer 2025 8" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 8">Pro Soccer 2025 8</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.77
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="8">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(14)" alt="City Builders 4" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="City Builders 4">City Builders 4</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.98
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="4">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(15)" alt="Kingdom Fall 22" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 22">Kingdom Fall 22</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $16.64
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="22">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(1)" alt="Zombie Outbreak 26" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 26">Zombie Outbreak 26</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="26">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(2)" alt="City Builders 58" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="City Builders 58">City Builders 58</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.68
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="58">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(16)" alt="Mystic Quest 3" class="w-full h-[120px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-50 mb-1 truncate" title="Mystic Quest 3">Mystic Quest 3</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $11.85
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="3">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li></ul>
+                        <button class="scroller-button left" aria-label="Scroll Left" data-target="newReleasesRow"><span class="lucide">&lt;</span></button>
+                        <button class="scroller-button right" aria-label="Scroll Right" data-target="newReleasesRow"><span class="lucide">&gt;</span></button>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="section-title">All Available Games</h2>
+                    <div id="allGamesGrid" class="main-content-grid"><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(10)" alt="Cyber Runners 44" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 44">Cyber Runners 44</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $53.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="44">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(11)" alt="Cosmic Drift 17" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cosmic Drift 17">Cosmic Drift 17</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $18.70
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="17">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(12)" alt="Kingdom Fall 6" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 6">Kingdom Fall 6</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.75
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="6">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(13)" alt="Space Tycoon 5" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Space Tycoon 5">Space Tycoon 5</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.63
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff" alt="Pro Soccer 2025 8" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 8">Pro Soccer 2025 8</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.77
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="8">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(14)" alt="City Builders 4" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 4">City Builders 4</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.98
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="4">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(15)" alt="Kingdom Fall 22" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 22">Kingdom Fall 22</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $16.64
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="22">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(1)" alt="Zombie Outbreak 26" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 26">Zombie Outbreak 26</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="26">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(2)" alt="City Builders 58" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 58">City Builders 58</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.68
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="58">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(16)" alt="Mystic Quest 3" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mystic Quest 3">Mystic Quest 3</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $11.85
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="3">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(17)" alt="Cyber Runners 54" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 54">Cyber Runners 54</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $46.75
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="54">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(18)" alt="Block Blitz 23" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 23">Block Blitz 23</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $51.63
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="23">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(19)" alt="Starship Commander 45" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Starship Commander 45">Starship Commander 45</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Racing</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $49.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="45">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(20)" alt="Mech Combat X 19" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mech Combat X 19">Mech Combat X 19</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $59.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="19">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(21)" alt="Jungle Escape 59" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 59">Jungle Escape 59</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.37
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="59">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(22)" alt="Mech Combat X 13" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mech Combat X 13">Mech Combat X 13</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $14.33
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="13">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(23)" alt="Jungle Escape 20" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 20">Jungle Escape 20</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $44.53
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="20">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(3)" alt="Cyber Runners 53" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 53">Cyber Runners 53</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $58.70
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="53">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(24)" alt="Pro Soccer 2025 30" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 30">Pro Soccer 2025 30</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $59.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="30">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(4)" alt="Pro Soccer 2025 15" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 15">Pro Soccer 2025 15</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $54.05
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="15">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(25)" alt="Zombie Outbreak 10" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 10">Zombie Outbreak 10</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $11.48
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$16.89</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="10">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(26)" alt="Pixel Pioneers 1" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 1">Pixel Pioneers 1</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $41.29
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="1">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(27)" alt="Starship Commander 2" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Starship Commander 2">Starship Commander 2</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $45.85
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="2">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(28)" alt="Mystic Quest 38" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mystic Quest 38">Mystic Quest 38</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $19.16
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$25.68</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="38">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(29)" alt="Nitro Speedsters 29" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Nitro Speedsters 29">Nitro Speedsters 29</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $54.53
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="29">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(30)" alt="Galaxy Warriors 7" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Galaxy Warriors 7">Galaxy Warriors 7</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $15.33
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="7">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(31)" alt="Mech Combat X 28" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mech Combat X 28">Mech Combat X 28</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.77
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="28">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(5)" alt="Cyber Runners 25" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 25">Cyber Runners 25</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $23.65
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$32.75</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="25">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(32)" alt="Pro Soccer 2025 35" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 35">Pro Soccer 2025 35</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $27.38
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$45.92</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="35">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(6)" alt="Block Blitz 48" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 48">Block Blitz 48</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Racing</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $25.85
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$38.12</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="48">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(33)" alt="Kingdom Fall 51" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 51">Kingdom Fall 51</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $20.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="51">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(34)" alt="City Builders 32" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 32">City Builders 32</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $58.29
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="32">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(35)" alt="Pixel Pioneers 39" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 39">Pixel Pioneers 39</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $27.48
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$53.94</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="39">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(36)" alt="Dungeon Delve Online 12" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Dungeon Delve Online 12">Dungeon Delve Online 12</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $23.51
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$42.46</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="12">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(37)" alt="Ancient Scrolls 50" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Ancient Scrolls 50">Ancient Scrolls 50</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $45.82
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="50">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(38)" alt="Pixel Pioneers 37" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 37">Pixel Pioneers 37</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $36.65
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$50.89</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="37">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(39)" alt="Cosmic Drift 18" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cosmic Drift 18">Cosmic Drift 18</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $11.92
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="18">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(40)" alt="Nitro Speedsters 60" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Nitro Speedsters 60">Nitro Speedsters 60</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $13.29
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="60">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(41)" alt="Pixel Pioneers 33" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 33">Pixel Pioneers 33</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.21
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="33">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(42)" alt="Block Blitz 31" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 31">Block Blitz 31</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $9.53
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$17.13</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="31">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(43)" alt="Ancient Scrolls 36" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Ancient Scrolls 36">Ancient Scrolls 36</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $14.08
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$24.67</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="36">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(44)" alt="Jungle Escape 34" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 34">Jungle Escape 34</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $20.63
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$33.32</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="34">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(7)" alt="Dragon&#39;s Hoard 14" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Dragon&#39;s Hoard 14">Dragon's Hoard 14</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $25.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="14">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(45)" alt="Jungle Escape 40" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 40">Jungle Escape 40</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.33
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="40">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(46)" alt="Fantasy Arena 21" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Fantasy Arena 21">Fantasy Arena 21</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $55.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="21">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(47)" alt="Kingdom Fall 43" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 43">Kingdom Fall 43</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $31.31
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="43">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(8)" alt="Space Tycoon 49" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Space Tycoon 49">Space Tycoon 49</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.86
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="49">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(48)" alt="Cosmic Drift 57" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cosmic Drift 57">Cosmic Drift 57</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $10.27
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="57">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(49)" alt="Block Blitz 42" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 42">Block Blitz 42</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $25.67
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="42">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(9)" alt="Pro Soccer 2025 47" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 47">Pro Soccer 2025 47</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $51.56
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="47">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(50)" alt="Pixel Pioneers 52" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 52">Pixel Pioneers 52</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $30.65
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="52">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(51)" alt="City Builders 55" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 55">City Builders 55</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $18.59
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="55">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(52)" alt="Starship Commander 9" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Starship Commander 9">Starship Commander 9</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $28.06
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$37.05</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="9">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(53)" alt="Block Blitz 24" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 24">Block Blitz 24</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $25.88
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="24">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(54)" alt="Pro Soccer 2025 27" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 27">Pro Soccer 2025 27</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $29.10
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$52.92</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="27">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(55)" alt="Jungle Escape 41" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 41">Jungle Escape 41</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $34.66
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="41">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(56)" alt="Dungeon Delve Online 56" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Dungeon Delve Online 56">Dungeon Delve Online 56</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $12.23
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="56">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(57)" alt="Fantasy Arena 11" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Fantasy Arena 11">Fantasy Arena 11</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $15.96
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$21.37</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="11">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(58)" alt="City Builders 46" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 46">City Builders 46</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $24.37
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$45.25</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="46">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(59)" alt="City Builders 16" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 16">City Builders 16</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $44.03
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="16">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li></div>
+                </div>
+            </div>
+
+             <div id="genreView" class="content-section">
+                 <h2 id="genreTitle" class="section-title">Genre Games</h2>
+                 <div id="genreGamesGrid" class="main-content-grid">
+                     <div class="no-games-message">Loading games for this genre...</div>
+                 </div>
+             </div>
+
+             <div id="searchView" class="content-section">
+                 <h2 id="searchTitle" class="section-title">Search Results</h2>
+                 <div id="searchGamesGrid" class="main-content-grid">
+                     <div class="no-games-message">Enter a search term above.</div>
+                 </div>
+             </div>
+
+            <div id="topSellersView" class="content-section">
+                <h2 class="section-title">Top Sellers</h2>
+                <div id="topSellersGrid" class="main-content-grid"><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(55)" alt="Jungle Escape 41" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 41">Jungle Escape 41</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $34.66
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="41">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(51)" alt="City Builders 55" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 55">City Builders 55</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $18.59
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="55">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(47)" alt="Kingdom Fall 43" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 43">Kingdom Fall 43</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $31.31
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="43">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(10)" alt="Cyber Runners 44" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 44">Cyber Runners 44</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $53.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="44">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(21)" alt="Jungle Escape 59" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 59">Jungle Escape 59</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.37
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="59">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(45)" alt="Jungle Escape 40" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 40">Jungle Escape 40</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.33
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="40">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(56)" alt="Dungeon Delve Online 56" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Dungeon Delve Online 56">Dungeon Delve Online 56</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $12.23
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="56">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(36)" alt="Dungeon Delve Online 12" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Dungeon Delve Online 12">Dungeon Delve Online 12</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $23.51
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$42.46</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="12">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(37)" alt="Ancient Scrolls 50" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Ancient Scrolls 50">Ancient Scrolls 50</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $45.82
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="50">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff" alt="Pro Soccer 2025 8" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 8">Pro Soccer 2025 8</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.77
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="8">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(6)" alt="Block Blitz 48" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 48">Block Blitz 48</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Racing</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $25.85
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$38.12</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="48">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(57)" alt="Fantasy Arena 11" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Fantasy Arena 11">Fantasy Arena 11</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $15.96
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$21.37</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="11">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(42)" alt="Block Blitz 31" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 31">Block Blitz 31</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $9.53
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$17.13</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="31">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(30)" alt="Galaxy Warriors 7" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Galaxy Warriors 7">Galaxy Warriors 7</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $15.33
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="7">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(26)" alt="Pixel Pioneers 1" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 1">Pixel Pioneers 1</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $41.29
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="1">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(50)" alt="Pixel Pioneers 52" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 52">Pixel Pioneers 52</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $30.65
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="52">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(41)" alt="Pixel Pioneers 33" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 33">Pixel Pioneers 33</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.21
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="33">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(15)" alt="Kingdom Fall 22" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 22">Kingdom Fall 22</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $16.64
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="22">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(4)" alt="Pro Soccer 2025 15" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 15">Pro Soccer 2025 15</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $54.05
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="15">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(1)" alt="Zombie Outbreak 26" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 26">Zombie Outbreak 26</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="26">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li></div>
+            </div>
+
+            <div id="onSaleView" class="content-section">
+                <h2 class="section-title">On Sale</h2>
+                <div id="onSaleGrid" class="main-content-grid"><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(25)" alt="Zombie Outbreak 10" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 10">Zombie Outbreak 10</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $11.48
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$16.89</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="10">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(28)" alt="Mystic Quest 38" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mystic Quest 38">Mystic Quest 38</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $19.16
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$25.68</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="38">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(5)" alt="Cyber Runners 25" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 25">Cyber Runners 25</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $23.65
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$32.75</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="25">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(32)" alt="Pro Soccer 2025 35" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 35">Pro Soccer 2025 35</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $27.38
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$45.92</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="35">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(6)" alt="Block Blitz 48" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 48">Block Blitz 48</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Racing</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $25.85
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$38.12</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="48">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(35)" alt="Pixel Pioneers 39" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 39">Pixel Pioneers 39</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $27.48
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$53.94</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="39">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(36)" alt="Dungeon Delve Online 12" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Dungeon Delve Online 12">Dungeon Delve Online 12</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Sports</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $23.51
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$42.46</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="12">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(38)" alt="Pixel Pioneers 37" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pixel Pioneers 37">Pixel Pioneers 37</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $36.65
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$50.89</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="37">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(42)" alt="Block Blitz 31" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 31">Block Blitz 31</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $9.53
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$17.13</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="31">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(43)" alt="Ancient Scrolls 36" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Ancient Scrolls 36">Ancient Scrolls 36</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $14.08
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$24.67</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="36">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(44)" alt="Jungle Escape 34" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 34">Jungle Escape 34</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $20.63
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$33.32</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="34">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(52)" alt="Starship Commander 9" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Starship Commander 9">Starship Commander 9</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $28.06
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$37.05</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="9">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(54)" alt="Pro Soccer 2025 27" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 27">Pro Soccer 2025 27</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $29.10
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$52.92</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="27">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(57)" alt="Fantasy Arena 11" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Fantasy Arena 11">Fantasy Arena 11</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $15.96
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$21.37</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="11">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(58)" alt="City Builders 46" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 46">City Builders 46</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-emerald-400 font-bold">
+                                $24.37
+                                <span class="original-price text-gray-500 text-xs ml-1 line-through">$45.25</span>
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="46">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li></div>
+            </div>
+
+            <div id="newReleasesView" class="content-section active">
+                <h2 class="section-title">New Releases</h2>
+                <div id="newReleasesGrid" class="main-content-grid"><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(10)" alt="Cyber Runners 44" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 44">Cyber Runners 44</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $53.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="44">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(11)" alt="Cosmic Drift 17" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cosmic Drift 17">Cosmic Drift 17</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $18.70
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="17">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(12)" alt="Kingdom Fall 6" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 6">Kingdom Fall 6</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.75
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="6">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(13)" alt="Space Tycoon 5" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Space Tycoon 5">Space Tycoon 5</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.63
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="5">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff" alt="Pro Soccer 2025 8" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 8">Pro Soccer 2025 8</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">MMO</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.77
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="8">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(14)" alt="City Builders 4" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 4">City Builders 4</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $36.98
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="4">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(15)" alt="Kingdom Fall 22" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Kingdom Fall 22">Kingdom Fall 22</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $16.64
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="22">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(1)" alt="Zombie Outbreak 26" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Zombie Outbreak 26">Zombie Outbreak 26</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $39.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="26">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(2)" alt="City Builders 58" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="City Builders 58">City Builders 58</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $23.68
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="58">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(16)" alt="Mystic Quest 3" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mystic Quest 3">Mystic Quest 3</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $11.85
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="3">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(17)" alt="Cyber Runners 54" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 54">Cyber Runners 54</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $46.75
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="54">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(18)" alt="Block Blitz 23" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Block Blitz 23">Block Blitz 23</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Strategy</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $51.63
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="23">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(19)" alt="Starship Commander 45" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Starship Commander 45">Starship Commander 45</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Racing</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $49.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="45">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(20)" alt="Mech Combat X 19" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mech Combat X 19">Mech Combat X 19</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $59.16
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="19">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(21)" alt="Jungle Escape 59" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 59">Jungle Escape 59</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Indie</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $50.37
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="59">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(22)" alt="Mech Combat X 13" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Mech Combat X 13">Mech Combat X 13</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Simulation</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $14.33
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="13">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(23)" alt="Jungle Escape 20" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Jungle Escape 20">Jungle Escape 20</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Puzzle</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $44.53
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="20">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(3)" alt="Cyber Runners 53" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Cyber Runners 53">Cyber Runners 53</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Action</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $58.70
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="53">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(24)" alt="Pro Soccer 2025 30" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 30">Pro Soccer 2025 30</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">Adventure</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $59.84
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="30">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="game-card-wrapper">
+                <div class="game-card bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex flex-col h-full transition-transform duration-200 ease-in-out hover:transform hover:-translate-y-1 hover:shadow-lg">
+                    <img src="./Game Complex1_files/ffffff(4)" alt="Pro Soccer 2025 15" class="w-full h-[150px] object-cover" onerror="this.onerror=null; this.src=&#39;https://placehold.co/300x200/cccccc/ffffff?text=Img+Error&#39;;" loading="lazy">
+                    <div class="caption p-3 flex-grow flex flex-col">
+                        <h3 class="text-base font-semibold text-gray-50 mb-1 truncate" title="Pro Soccer 2025 15">Pro Soccer 2025 15</h3>
+                        <p class="genre text-xs text-gray-400 mb-2">RPG</p>
+                        <div class="details mt-auto flex justify-between items-center text-sm">
+                            <span class="price text-blue-400 font-bold">
+                                $54.05
+                                
+                            </span>
+                            <button class="btn btn-primary btn-sm !py-1 !px-2 !text-xs buy-button" data-id="15">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </li></div>
+            </div>
+
+            <div id="sellView" class="content-section p-6">
+                 <h2 class="section-title">Sell Your Games</h2>
+                 <p class="text-gray-400">This section is under construction.</p>
+             </div>
+             <div id="accountView" class="content-section p-6">
+                 <h2 class="section-title">My Account</h2>
+                 <p class="text-gray-400">Account details will be available here.</p>
+             </div>
+
+        </main>
+    </div>
+
+    
+
+
+
+
+    <script src="app.js"></script>
+
+    <!-- Game Details Modal -->
+    <div id="gameModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="Game Cover">
+                <button class="modal-close" id="closeModalBtn">
+                    <span class="lucide">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 id="modalTitle" class="modal-title">Game Title</h2>
+                <div id="modalGenre" class="modal-genre">Genre</div>
+                <div id="modalDescription" class="modal-description">
+                    This is an exciting game where you embark on an epic journey. Experience breathtaking graphics and thrilling gameplay!
+                </div>
+                <div class="modal-footer">
+                    <div id="modalPrice" class="modal-price">$0.00</div>
+                    <button class="btn btn-primary" id="modalBuyBtn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>
