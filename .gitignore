@@ -1,0 +1,32 @@
+# Node
+node_modules/
+dist/
+.env
+.env.local
+
+# Python/Django
+backend/venv/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database
+# If you want to share the 414 seeded games with anyone who downloads the repo, 
+# you should NOT ignore db.sqlite3. If you want everyone to start fresh, uncomment the line below.
+# backend/db.sqlite3
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
