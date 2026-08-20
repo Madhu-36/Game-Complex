@@ -2,6 +2,14 @@
 
 A modern, high-performance gaming storefront with an integrated AI Chatbot assistant, 414 seeded authentic games, and a complete user management system.
 
+## 🚀 Key Technical Features
+- **Adaptive Security Firewall**: Real-time Redis-backed middleware that blocks SQLi, XSS, and Directory Traversal attacks, auto-banning malicious IPs.
+- **Enterprise Cryptography**: All digital game keys are encrypted at rest using AES-256 (Fernet) to achieve a zero-knowledge database.
+- **Advanced API Throttling**: Custom DRF rate limiters to completely mitigate brute-force logins and automated credit card testing.
+- **Full-Spectrum Checkout**: A dedicated, React-powered checkout flow supporting physical delivery address tracking and versatile payment routing (UPI, COD, Net Banking).
+- **Optimistic Concurrency Control (OCC)**: PostgreSQL row-level locks prevent double-selling of high-demand items during flash sales.
+
+
 ## Setup Instructions for a New Machine
 
 To run this project on a new computer after downloading it from GitHub, follow these exact steps:
