@@ -25,3 +25,7 @@ class CheckoutSerializer(serializers.Serializer):
     product_ids = serializers.ListField(
         child=serializers.UUIDField()
     )
+    address = serializers.CharField(required=False, allow_blank=True)
+    city = serializers.CharField(required=False, allow_blank=True)
+    zip_code = serializers.CharField(required=False, allow_blank=True)
+    payment_method = serializers.CharField(required=False, allow_blank=True)

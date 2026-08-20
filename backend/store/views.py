@@ -59,7 +59,11 @@ class CheckoutView(generics.GenericAPIView):
             order = Order.objects.create(
                 user=request.user,
                 total_amount=total_amount,
-                stripe_charge_id="fake_charge_123" # Mock charge
+                stripe_charge_id="fake_charge_123", # Mock charge
+                address=serializer.validated_data.get('address', ''),
+                city=serializer.validated_data.get('city', ''),
+                zip_code=serializer.validated_data.get('zip_code', ''),
+                payment_method=serializer.validated_data.get('payment_method', '')
             )
 
             for product in products:
