@@ -127,6 +127,11 @@ const Navbar = () => {
                     </div>
                     <Link to="/profile" className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors">My Profile</Link>
                     <Link to="/profile" className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors">Game Library</Link>
+                    {(user.is_superuser || user.is_staff) && (
+                      <Link to="/admin-dashboard" className="block px-4 py-2 text-sm text-orange-400 hover:bg-gray-700 hover:text-orange-300 font-bold transition-colors">
+                        Admin Dashboard
+                      </Link>
+                    )}
                     <button onClick={() => { localStorage.removeItem('access_token'); window.location.href = '/login'; }} className="w-full text-left block px-4 py-2 text-sm text-red-400 hover:bg-red-900/30 hover:text-red-300 transition-colors border-t border-gray-700 mt-1">Sign Out</button>
                   </div>
                 </div>

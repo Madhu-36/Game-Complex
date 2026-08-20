@@ -82,3 +82,11 @@ class CheckoutView(generics.GenericAPIView):
                 )
 
         return Response({"detail": "Checkout successful!", "order_id": order.id}, status=status.HTTP_201_CREATED)
+
+from rest_framework.permissions import IsAdminUser
+from .serializers import OrderSerializer
+
+class AdminOrderViewSet(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [IsAdminUser]
+    serializer_class = OrderSerializer
+    queryset = Order.objects.all().order_by('-created_at')

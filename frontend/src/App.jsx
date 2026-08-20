@@ -9,6 +9,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Profile from './components/Profile';
 import Checkout from './components/Checkout';
+import AdminDashboard from './components/AdminDashboard';
 import ChatBot from './components/ChatBot';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -25,6 +26,7 @@ function App() {
               <Route path="/game/:slug" element={<ProtectedRoute><GameDetails /></ProtectedRoute>} />
               <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
               <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
+              <Route path="/admin-dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
               
               {/* Public Routes */}
               <Route path="/login" element={<Login />} />

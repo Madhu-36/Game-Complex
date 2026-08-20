@@ -29,3 +29,13 @@ class CheckoutSerializer(serializers.Serializer):
     city = serializers.CharField(required=False, allow_blank=True)
     zip_code = serializers.CharField(required=False, allow_blank=True)
     payment_method = serializers.CharField(required=False, allow_blank=True)
+
+from .models import Order
+
+class OrderSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(source='user.username', read_only=True)
+    email = serializers.CharField(source='user.email', read_only=True)
+
+    class Meta:
+        model = Order
+        fields = ['id', 'username', 'email', 'total_amount', 'address', 'city', 'zip_code', 'payment_method', 'created_at']
