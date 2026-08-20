@@ -21,7 +21,7 @@ const Navbar = () => {
     }
   };
 
-  const handleCheckout = async () => {
+  const handleCheckout = () => {
     if (!user) {
       alert("Please log in to checkout.");
       navigate('/login');
@@ -29,29 +29,8 @@ const Navbar = () => {
       return;
     }
     
-    // Fake delivery prompt as requested
-    const deliveryEmail = prompt("Enter email for digital delivery receipt:", user.email || "");
-    if (!deliveryEmail) return;
-
-    setIsCheckingOut(true);
-    try {
-      const productIds = cartItems.map(item => item.id);
-      const token = localStorage.getItem('access_token');
-      await axios.post('http://localhost:8000/api/store/checkout/', 
-        { product_ids: productIds },
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
-      
-      alert(`Success! Receipt sent to ${deliveryEmail}. Games added to your library.`);
-      if (clearCart) clearCart();
-      setIsCartOpen(false);
-      navigate('/profile');
-    } catch (error) {
-      console.error(error);
-      alert("Checkout failed. Please try again.");
-    } finally {
-      setIsCheckingOut(false);
-    }
+    setIsCartOpen(false);
+    navigate('/checkout');
   };
 
   const cartTotal = cartItems.reduce((total, item) => total + parseFloat(item.price), 0).toFixed(2);
