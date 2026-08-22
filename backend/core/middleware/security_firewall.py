@@ -7,8 +7,13 @@ logger = logging.getLogger(__name__)
 
 class AdaptiveSecurityFirewall:
     """
-    Custom adaptive middleware to detect and block malicious patterns.
-    Uses Redis (via Django cache) to temporarily ban IPs in real-time.
+    Enterprise-grade custom adaptive middleware designed to detect and block malicious traffic patterns.
+    
+    Features:
+    - Real-time Deep Packet Inspection (DPI) of request bodies, URLs, and headers.
+    - Zero-Day heuristic detection for SQLi, XSS, and Directory Traversal.
+    - Distributed strike tracking via Redis caching.
+    - Automated IP blacklisting with exponential backoff on repeat offenses.
     """
     
     # Common attack vectors (SQLi, XSS, Directory Traversal)
