@@ -147,3 +147,6 @@ const Checkout = () => {
 };
 
 export default Checkout;
+
+/* Checkout Component handles delivery address and payment processing */
+
