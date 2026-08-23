@@ -70,3 +70,10 @@ npm run dev
 ### Troubleshooting
 - If the AI Chatbot is unresponsive, make sure you configure your Gemini API Key in the backend.
 - If images are not loading, ensure you have an active internet connection as they are securely fetched from the FreeToGame CDN.
+
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
