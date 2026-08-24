@@ -27,3 +27,5 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+
+/** CartContext provides global state for the shopping cart mechanics **/
