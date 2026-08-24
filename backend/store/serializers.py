@@ -39,3 +39,6 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = ['id', 'username', 'email', 'total_amount', 'address', 'city', 'zip_code', 'payment_method', 'created_at']
+
+# Serializers enforce strict validation to prevent Mass Assignment vulnerabilities.
+
