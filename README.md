@@ -8,7 +8,7 @@ A modern, high-performance gaming storefront with an integrated AI Chatbot assis
 - **Advanced API Throttling**: Custom DRF rate limiters to completely mitigate brute-force logins and automated credit card testing.
 - **Full-Spectrum Checkout**: A dedicated, React-powered checkout flow supporting physical delivery address tracking and versatile payment routing (UPI, COD, Net Banking).
 - **Optimistic Concurrency Control (OCC)**: PostgreSQL row-level locks prevent double-selling of high-demand items during flash sales.
-
+- **Admin & user
 
 ## Setup Instructions for a New Machine
 
