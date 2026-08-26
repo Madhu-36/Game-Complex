@@ -81,16 +81,16 @@ const Checkout = () => {
                 <h3 className="text-xl font-bold text-white border-b border-gray-700 pb-2">Delivery Address</h3>
                 <div>
                   <label className="block text-sm font-medium text-gray-400 mb-1">Street Address</label>
-                  <input required type="text" value={address} onChange={(e) => setAddress(e.target.value)} className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-green-500" placeholder="123 Gamer Street" />
+                  <input required type="text" value={address} onChange={(e) => setAddress(e.target.value)} className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-green-500" placeholder="123 Gamer Street" />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-400 mb-1">City</label>
-                    <input required type="text" value={city} onChange={(e) => setCity(e.target.value)} className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-green-500" placeholder="New York" />
+                    <input required type="text" value={city} onChange={(e) => setCity(e.target.value)} className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-green-500" placeholder="New York" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-400 mb-1">ZIP / Postal Code</label>
-                    <input required type="text" value={zip} onChange={(e) => setZip(e.target.value)} className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-green-500" placeholder="10001" />
+                    <input required type="text" value={zip} onChange={(e) => setZip(e.target.value)} className="w-full bg-transparent border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-green-500" placeholder="10001" />
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const Checkout = () => {
                     { id: 'cash_on_delivery', label: 'Cash on Delivery' },
                     { id: 'upi_doorstep', label: 'UPI on Doorstep' }
                   ].map((method) => (
-                    <label key={method.id} className={`flex items-center p-4 border rounded-xl cursor-pointer transition-colors ${paymentMethod === method.id ? 'border-green-500 bg-green-500/10' : 'border-gray-700 bg-gray-900 hover:border-gray-500'}`}>
+                    <label key={method.id} className={`flex items-center p-4 border rounded-xl cursor-pointer transition-colors ${paymentMethod === method.id ? 'border-green-500 bg-green-500/10' : 'border-gray-700 bg-transparent hover:border-gray-500'}`}>
                       <input 
                         type="radio" 
                         name="payment" 

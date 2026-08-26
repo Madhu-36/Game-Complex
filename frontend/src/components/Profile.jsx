@@ -55,7 +55,7 @@ const Profile = () => {
   if (!user) return null;
 
   return (
-    <div className="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto space-y-8">
         
         {/* Profile Header */}
@@ -109,9 +109,9 @@ const Profile = () => {
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }} className="bg-gray-800 rounded-3xl p-6 shadow-xl border border-gray-700">
             <h3 className="text-xl font-bold text-white mb-6 border-b border-gray-700 pb-4">Account Settings</h3>
             <div className="space-y-4">
-              <button className="w-full text-left px-4 py-3 bg-gray-900 hover:bg-gray-700 rounded-xl text-gray-300 font-medium transition-colors">Edit Profile</button>
-              <button className="w-full text-left px-4 py-3 bg-gray-900 hover:bg-gray-700 rounded-xl text-gray-300 font-medium transition-colors">Payment Methods</button>
-              <button className="w-full text-left px-4 py-3 bg-gray-900 hover:bg-gray-700 rounded-xl text-gray-300 font-medium transition-colors">Security & Passwords</button>
+              <button className="w-full text-left px-4 py-3 bg-transparent hover:bg-gray-700 rounded-xl text-gray-300 font-medium transition-colors">Edit Profile</button>
+              <button className="w-full text-left px-4 py-3 bg-transparent hover:bg-gray-700 rounded-xl text-gray-300 font-medium transition-colors">Payment Methods</button>
+              <button className="w-full text-left px-4 py-3 bg-transparent hover:bg-gray-700 rounded-xl text-gray-300 font-medium transition-colors">Security & Passwords</button>
               <button className="w-full text-left px-4 py-3 bg-green-900/20 text-green-400 border border-green-500/30 rounded-xl font-bold transition-colors">Purchase History ({library.length})</button>
             </div>
           </motion.div>
@@ -129,7 +129,7 @@ const Profile = () => {
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {library.map(entry => (
-                  <Link to={`/game/${entry.product.slug}`} key={entry.id} className="group relative rounded-xl overflow-hidden shadow-lg border border-gray-700 aspect-video bg-gray-900">
+                  <Link to={`/game/${entry.product.slug}`} key={entry.id} className="group relative rounded-xl overflow-hidden shadow-lg border border-gray-700 aspect-video bg-transparent">
                     {entry.product.cover_image && (
                       <img src={entry.product.cover_image} alt={entry.product.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     )}

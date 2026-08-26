@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
     <div className="group block">
       <Link to={`/game/${product.slug}`} className="block h-full">
         <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 h-full flex flex-col transition-colors group-hover:border-green-500/50">
-          <div className="relative aspect-video overflow-hidden bg-gray-900">
+          <div className="relative aspect-video overflow-hidden bg-transparent">
             {product.cover_image ? (
               <img 
                 src={product.cover_image} 

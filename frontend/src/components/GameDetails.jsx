@@ -79,7 +79,7 @@ const GameDetails = () => {
         
         {/* Back Button */}
         <div className="absolute top-8 left-8 z-10">
-          <Link to="/" className="text-gray-300 hover:text-white flex items-center bg-gray-900/50 px-4 py-2 rounded-lg backdrop-blur-sm transition-all hover:bg-gray-800">
+          <Link to="/" className="text-gray-300 hover:text-white flex items-center bg-transparent/50 px-4 py-2 rounded-lg backdrop-blur-sm transition-all hover:bg-gray-800">
             <span className="mr-2">&larr;</span> Back to Store
           </Link>
         </div>
@@ -206,7 +206,7 @@ const GameDetails = () => {
                 href={`https://www.youtube.com/results?search_query=${encodeURIComponent(product.title + ' official gameplay trailer')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative block aspect-video w-full bg-gray-900 rounded-xl overflow-hidden shadow-2xl border border-gray-700 hover:border-green-500 transition-all cursor-pointer"
+                className="group relative block aspect-video w-full bg-transparent rounded-xl overflow-hidden shadow-2xl border border-gray-700 hover:border-green-500 transition-all cursor-pointer"
               >
                 {/* Background Image */}
                 <img 

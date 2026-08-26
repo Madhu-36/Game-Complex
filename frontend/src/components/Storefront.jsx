@@ -39,7 +39,7 @@ const Storefront = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen text-white flex justify-center items-center bg-gray-900">
+      <div className="min-h-screen text-white flex justify-center items-center bg-transparent">
         <div className="bg-red-900 p-6 rounded-lg text-center">
           <h2 className="text-2xl font-bold mb-2">Error</h2>
           <p>{error}</p>
@@ -61,11 +61,11 @@ const Storefront = () => {
   const isFiltered = new URLSearchParams(location.search).has('search') || new URLSearchParams(location.search).has('category');
 
   return (
-    <div className="min-h-screen bg-gray-900 p-8 font-sans">
+    <div className="min-h-screen bg-transparent p-8 font-sans relative z-10">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-end mb-12">
           <h1 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 tracking-tight">
-            Game Complex
+            G-C
           </h1>
           {isFiltered && (
             <Link to="/" className="text-gray-400 hover:text-white flex items-center gap-2 mb-2 transition-colors">

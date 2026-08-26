@@ -38,7 +38,7 @@ const AdminDashboard = () => {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-gray-900">
+    <div className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-transparent">
       <div className="max-w-7xl mx-auto">
         <div className="bg-gray-800 rounded-2xl border border-gray-700 shadow-2xl overflow-hidden">
           <div className="p-8">
@@ -49,7 +49,7 @@ const AdminDashboard = () => {
 
             <div className="overflow-x-auto">
               <table className="w-full text-left text-gray-300">
-                <thead className="text-xs uppercase bg-gray-900 border-b border-gray-700 text-gray-400">
+                <thead className="text-xs uppercase bg-transparent border-b border-gray-700 text-gray-400">
                   <tr>
                     <th className="px-6 py-4 rounded-tl-lg">Order ID</th>
                     <th className="px-6 py-4">Customer</th>
@@ -69,7 +69,7 @@ const AdminDashboard = () => {
                       </td>
                       <td className="px-6 py-4 font-bold">${order.total_amount}</td>
                       <td className="px-6 py-4">
-                        <span className="bg-gray-900 px-3 py-1 rounded-full text-xs border border-gray-600">
+                        <span className="bg-transparent px-3 py-1 rounded-full text-xs border border-gray-600">
                           {order.payment_method ? order.payment_method.replace(/_/g, ' ') : 'N/A'}
                         </span>
                       </td>

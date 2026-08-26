@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { CartContext } from '../context/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -9,7 +9,9 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const { user } = useContext(AuthContext);
   const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
 
@@ -33,17 +35,37 @@ const Navbar = () => {
     navigate('/checkout');
   };
 
+  // Hide Navbar on Login and Register pages
+  if (location.pathname === '/login' || location.pathname === '/register') {
+    return null;
+  }
+
   const cartTotal = cartItems.reduce((total, item) => total + parseFloat(item.price), 0).toFixed(2);
 
   return (
-    <nav className="bg-gray-900 border-b border-gray-800 sticky top-0 z-50 shadow-xl">
+    <nav className="bg-black/70 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 tracking-tighter hover:from-green-300 hover:to-emerald-500 transition-colors">
-              GAME<span className="text-white">COMPLEX</span>
+          {/* Mobile Menu Button & Logo */}
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <button 
+              className="md:hidden text-gray-400 hover:text-white p-2 focus:outline-none"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <img src="/images/logo.png" alt="Game Complex Logo" className="h-8 md:h-10 object-contain" />
+              <span className="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 tracking-tighter">
+                G-<span className="text-white">C</span>
+              </span>
             </Link>
           </div>
 
@@ -84,7 +106,7 @@ const Navbar = () => {
               </div>
               <input
                 type="text"
-                className="block w-64 pl-10 pr-3 py-2 border border-gray-700 rounded-full leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-gray-900 focus:border-green-500 focus:ring-1 focus:ring-green-500 sm:text-sm transition-colors"
+                className="block w-64 pl-10 pr-3 py-2 border border-gray-700 rounded-full leading-5 bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:bg-transparent focus:border-green-500 focus:ring-1 focus:ring-green-500 sm:text-sm transition-colors"
                 placeholder="Search games..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -145,6 +167,46 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Menu Panel */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-gray-800 border-b border-gray-700 overflow-hidden"
+          >
+            <div className="px-4 pt-2 pb-4 space-y-3">
+              <form onSubmit={(e) => { handleSearch(e); setIsMobileMenuOpen(false); }} className="relative w-full">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <svg className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  className="block w-full pl-10 pr-3 py-2 border border-gray-600 rounded-lg leading-5 bg-transparent text-gray-300 placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
+                  placeholder="Search games..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </form>
+              <div className="flex flex-col gap-2">
+                <p className="text-gray-500 text-xs font-bold uppercase tracking-wider">Genres</p>
+                <Link to="/?category=Action" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-300 hover:text-white py-1">Action</Link>
+                <Link to="/?category=RPG" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-300 hover:text-white py-1">RPG</Link>
+                <Link to="/?category=Strategy" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-300 hover:text-white py-1">Strategy</Link>
+                <Link to="/?category=Racing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-300 hover:text-white py-1">Racing</Link>
+              </div>
+              <div className="border-t border-gray-700 pt-2 flex flex-col gap-2">
+                <Link to="/?category=Action" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-300 hover:text-white font-medium">Top Sellers</Link>
+                <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-300 hover:text-white font-medium">New Releases</Link>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Cart Drawer */}
       <AnimatePresence>
         {isCartOpen && (
@@ -161,7 +223,7 @@ const Navbar = () => {
               animate={{ x: 0 }} 
               exit={{ x: '100%' }}
               transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
-              className="fixed top-0 right-0 h-full w-full max-w-md bg-gray-900 border-l border-gray-800 shadow-2xl z-50 flex flex-col"
+              className="fixed top-0 right-0 h-full w-full max-w-md bg-transparent border-l border-gray-800 shadow-2xl z-50 flex flex-col"
             >
               <div className="p-6 flex justify-between items-center border-b border-gray-800">
                 <h2 className="text-2xl font-black text-white">Your Cart</h2>
@@ -198,7 +260,7 @@ const Navbar = () => {
               </div>
 
               {cartItems.length > 0 && (
-                <div className="p-6 border-t border-gray-800 bg-gray-900/90 backdrop-blur-md">
+                <div className="p-6 border-t border-gray-800 bg-transparent/90 backdrop-blur-md">
                   <div className="flex justify-between items-center mb-6">
                     <span className="text-gray-400 font-medium text-lg">Total</span>
                     <span className="text-3xl font-black text-white">${cartTotal}</span>
