@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { motion } from 'framer-motion';
 
 const AdminDashboard = () => {
   const { user } = useContext(AuthContext);
@@ -41,11 +40,7 @@ const AdminDashboard = () => {
   return (
     <div className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-gray-900">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="bg-gray-800 rounded-2xl border border-gray-700 shadow-2xl overflow-hidden"
-        >
+        <div className="bg-gray-800 rounded-2xl border border-gray-700 shadow-2xl overflow-hidden">
           <div className="p-8">
             <h2 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500 mb-2">
               Admin Operations Dashboard
@@ -102,7 +97,7 @@ const AdminDashboard = () => {
               </table>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

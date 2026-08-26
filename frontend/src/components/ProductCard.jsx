@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 const ProductCard = ({ product }) => {
   return (
-    <motion.div
-      whileHover={{ y: -10, scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      className="group block"
-    >
+    <div className="group block">
       <Link to={`/game/${product.slug}`} className="block h-full">
         <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 h-full flex flex-col transition-colors group-hover:border-green-500/50">
           <div className="relative aspect-video overflow-hidden bg-gray-900">
@@ -47,7 +42,7 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 

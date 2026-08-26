@@ -10,7 +10,6 @@ import Register from './components/Register';
 import Profile from './components/Profile';
 import Checkout from './components/Checkout';
 import AdminDashboard from './components/AdminDashboard';
-import ChatBot from './components/ChatBot';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
             </Routes>
-            <ChatBot />
           </div>
         </BrowserRouter>
       </CartProvider>
