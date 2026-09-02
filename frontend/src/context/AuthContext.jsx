@@ -10,7 +10,11 @@ export const AuthProvider = ({ children }) => {
   // Initialize auth state from local storage
   useEffect(() => {
     const fetchUser = async () => {
-      const token = localStorage.getItem('access_token');
+      let token = null;
+      try {
+        token = localStorage.getItem('access_token');
+      } catch(e) {}
+      
       if (token) {
         try {
           const res = await axios.get('http://localhost:8000/api/auth/me/', {
@@ -19,8 +23,10 @@ export const AuthProvider = ({ children }) => {
           setUser(res.data);
         } catch (error) {
           console.error("Failed to fetch user:", error);
-          localStorage.removeItem('access_token');
-          localStorage.removeItem('refresh_token');
+          try {
+            localStorage.removeItem('access_token');
+            localStorage.removeItem('refresh_token');
+          } catch(e) {}
         }
       }
       setLoading(false);
