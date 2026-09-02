@@ -12,6 +12,17 @@ import Checkout from './components/Checkout';
 import AdminDashboard from './components/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 
+import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import RefundPolicy from './components/RefundPolicy';
+import TermsOfService from './components/TermsOfService';
+import AboutUs from './components/AboutUs';
+import PaymentFailed from './components/PaymentFailed';
+import CookieBanner from './components/CookieBanner';
+import PasswordResetRequest from './components/PasswordResetRequest';
+import PasswordResetConfirm from './components/PasswordResetConfirm';
+import EmailVerification from './components/EmailVerification';
+
 function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
@@ -54,8 +65,24 @@ function App() {
                 {/* Public Routes */}
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                
+                {/* Legal & Static Routes */}
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/refunds" element={<RefundPolicy />} />
+                <Route path="/terms" element={<TermsOfService />} />
+                <Route path="/about" element={<AboutUs />} />
+                
+                {/* Utility Routes */}
+                <Route path="/payment-failed" element={<PaymentFailed />} />
+                <Route path="/reset-password" element={<PasswordResetRequest />} />
+                <Route path="/reset-password-confirm/:uid/:token" element={<PasswordResetConfirm />} />
+                <Route path="/verify-email/:uid/:token" element={<EmailVerification />} />
               </Routes>
+              
+              <Footer />
             </div>
+            
+            <CookieBanner />
           </div>
         </BrowserRouter>
       </CartProvider>
