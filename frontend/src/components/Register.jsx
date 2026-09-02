@@ -14,11 +14,11 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await register(username, email, password);
+    const res = await register(username, email, password, password);
+    if (res.success) {
       navigate('/login');
-    } catch (err) {
-      setError('Error during registration');
+    } else {
+      setError(res.error || 'Error during registration');
     }
   };
 
