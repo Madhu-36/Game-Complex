@@ -1,112 +1,132 @@
 # 🎮 Game Complex (G-C)
+**A Next-Generation E-Commerce Storefront for Digital Games**
 
-Welcome to **Game Complex (G-C)**! This is a modern, high-performance, and visually stunning gaming storefront with a fully integrated 3D parallax cinematic interface. It features 400+ seeded authentic games, a comprehensive user management system, an AI Chatbot assistant, and an advanced security infrastructure.
+[![React](https://img.shields.io/badge/React-19.2.8-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Django](https://img.shields.io/badge/Django-5.1.6-092E20?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 
-## ✨ Key Features
-
-- **Cinematic 3D Parallax Interface**: A breathtaking, edge-to-edge interactive background that tracks cursor movement across the entire application, giving a 360-degree gamer-room feel.
-- **Glassmorphism UI**: Beautifully frosted, semi-transparent overlays for the storefront, game details, cart, and authentication pages.
-- **Adaptive Security Firewall**: Real-time Redis-backed middleware blocks SQLi, XSS, and Directory Traversal attacks, auto-banning malicious IPs (5 strikes = 1-hour ban).
-- **Enterprise Cryptography**: All digital game keys are encrypted at rest using AES-256 (Fernet) to achieve a zero-knowledge database.
-- **Advanced API Throttling**: Custom Django REST Framework (DRF) rate limiters mitigate brute-force logins and automated credit card testing.
-- **Optimistic Concurrency Control (OCC)**: PostgreSQL row-level locks prevent the double-selling of high-demand items during flash sales using `select_for_update`.
-- **Full-Spectrum Checkout**: A dedicated, React-powered checkout flow supporting physical delivery address tracking and versatile payment routing (UPI, COD, Net Banking).
-
-## 🛠️ Technology Stack
-
-- **Frontend**: React (Vite), Tailwind CSS, Framer Motion, Axios, React Router v6.
-- **Backend**: Django, Django REST Framework (DRF), SQLite (development).
-- **Security & Caching**: Redis (for Firewall and Throttling), AES-256 Encryption.
-- **Assets**: Custom branding, immersive background imagery, FreeToGame CDN for game metadata.
+> *An immersive, high-performance digital gaming marketplace engineered with a focus on seamless user experience, secure transactions, and scalable architecture.*
 
 ---
 
-## 👥 Users & Roles
+## 🎬 Live Demo & Video Showcase
+- **Live Deployment:** [Insert Vercel/Netlify/Render Link Here]
+- **Video Walkthrough:** [Insert YouTube/Loom Link Here]
 
-### Administrator
-The system comes with a pre-configured superuser account for complete system administration.
-- **Username:** `Madhu_Satish`
-- **Password:** `M@dhu.$.36`
-
-**Admin Capabilities:**
-- Full access to the Django Admin Panel (`/admin`) and custom Admin Dashboard (`/admin-dashboard`).
-- Add, edit, or delete games, categories, and stock.
-- View and manage user accounts and orders.
-- Monitor security strikes and banned IPs.
-
-### Regular Users
-New users can register via the `/register` page. 
-- Features: Browse games, search, filter by genres, view game details, add to cart, and checkout.
-- Profile: Users have a dedicated Profile page (`/profile`) with customizable profile photos, order history, and a game library.
+*(Note: Live deployment is currently being finalized. Please refer to local installation instructions below).*
 
 ---
 
-## 🚀 Setup & Installation Instructions
+## 🚀 Why This Project Stands Out (For Recruiters)
+This project was built from the ground up to demonstrate production-ready full-stack capabilities, focusing on modern architectural patterns and robust engineering:
 
-To run this project on your local machine, follow these exact steps:
+1. **State-of-the-art Frontend:** Built with React 19 and Vite. Features a highly optimized, custom-engineered `framer-motion` VR loading screen, interactive 3D parallax effects, and glassmorphism UI using the bleeding-edge TailwindCSS v4.
+2. **Robust Backend:** Powered by Django REST Framework (DRF) with custom JWT Authentication protocols, robust model relationships, and secure API endpoints.
+3. **Resilient Error Handling:** Features custom native React Error Boundaries that intercept runtime exceptions, guaranteeing the application never silently crashes to a white screen.
+4. **Complete E-Commerce Loop:** From product categorization and search filtering, to a persistent shopping cart context, simulated secure checkout, user profiles, and a role-protected Admin Dashboard.
+5. **Security & Privacy First:** Implements route protection, encrypted passwords, local-storage token management, and dynamic legal pages (GDPR-compliant Cookie Banners, Privacy Policies, etc.).
 
-### 1. Prerequisites
-- Install **Python 3.10+** (Ensure it is added to your system PATH)
-- Install **Node.js** (v18 or higher)
-- Install **Redis** (Required for the Adaptive Security Firewall and API Throttling)
+---
 
-### 2. Backend Setup (Django)
-Open a terminal in the project root and navigate to the backend directory:
+## 🏗️ Architecture Overview
+
+The application follows a decoupled client-server architecture:
+
+### Frontend (Client-Side)
+- **Framework:** React.js (v19) initialized via Vite for lightning-fast HMR.
+- **Routing:** React Router v7 with Custom `ProtectedRoute` wrappers.
+- **State Management:** React Context API (`AuthContext`, `CartContext`) for global state without prop-drilling.
+- **Styling:** TailwindCSS v4 + Framer Motion for complex animations.
+- **Data Fetching:** Axios with JWT Interceptors.
+
+### Backend (Server-Side)
+- **Framework:** Django 5.1 with Django REST Framework (DRF).
+- **Database:** SQLite (Development) / PostgreSQL-ready (Production).
+- **Authentication:** `djangorestframework-simplejwt` for secure token-based access.
+- **CORS:** Django CORS Headers strictly configured to allow frontend communication.
+
+---
+
+## ⚙️ Features
+
+- **Dynamic Storefront:** Filter by genres, top sellers, and search queries with instant API responses.
+- **User Authentication:** Registration, Login, and persistent sessions using JWT.
+- **Shopping Cart:** Add, remove, and calculate totals in real-time.
+- **Admin Dashboard:** Role-based access control allowing staff to manage inventory directly from the frontend.
+- **Immersive UI:** Parallax background tracking mouse movement, fully responsive design, and cinematic VR loader.
+
+---
+
+## 💻 Local Installation & Deployment
+
+Follow these steps to run the project locally on your machine.
+
+### Prerequisites
+- Node.js (v18+)
+- Python (v3.10+)
+- Git
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Madhu-36/Game-Complex.git
+cd Game-Complex
+```
+
+### 2. Backend Setup
+Open a terminal and navigate to the backend directory:
 ```bash
 cd backend
-```
-Create and activate a virtual environment:
-```bash
+# Create a virtual environment
 python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On Mac/Linux:
+
+# Activate the virtual environment (Windows)
+.\venv\Scripts\activate
+# Activate (Mac/Linux)
 source venv/bin/activate
-```
-Install all required Python packages:
-```bash
+
+# Install dependencies
 pip install -r requirements.txt
-```
-Run database migrations to initialize the database:
-```bash
+
+# Apply database migrations
 python manage.py migrate
-```
-Start the Django Server:
-```bash
+
+# Create a superuser (optional, to access Django admin)
+python manage.py createsuperuser
+
+# Start the Django server
 python manage.py runserver
 ```
-*The backend API is now running on `http://localhost:8000`*
+*The backend will now be running at `http://localhost:8000/`.*
 
-### 3. Frontend Setup (React + Vite)
-Open a **new** terminal in the project root and navigate to the frontend directory:
+### 3. Frontend Setup
+Open a **new** terminal and navigate to the frontend directory:
 ```bash
 cd frontend
-```
-Install all Node modules (this may take a minute):
-```bash
+
+# Install Node modules
 npm install
-```
-Start the Vite Development Server:
-```bash
+
+# Start the Vite development server
 npm run dev
 ```
-*The frontend is now running on `http://localhost:5173`*
-
-### 4. Running the Application
-- **Storefront**: Open your browser and go to `http://localhost:5173`
-- **Admin Panel**: Go to `http://localhost:8000/admin`. Log in using `Madhu_Satish` / `M@dhu.$.36`.
+*The frontend will now be running at `http://localhost:5173/`.*
 
 ---
 
-## 🛠️ Troubleshooting
+## 🔮 Future Roadmap
+- **Stripe Integration:** Replacing the simulated checkout with real payment processing via Stripe API.
+- **Dockerization:** Containerizing the frontend and backend with `docker-compose` for 1-click deployments.
+- **PostgreSQL Migration:** Swapping out SQLite for a scalable PostgreSQL database.
+- **Real-time Chat:** Implementing WebSockets (Django Channels) for live customer support.
+- **CI/CD Pipeline:** Automating testing and deployment using GitHub Actions.
 
-- **AI Chatbot is unresponsive**: Make sure you have configured your Gemini API Key in the backend environment variables.
-- **Images are not loading**: Ensure you have an active internet connection, as game images are securely fetched from the FreeToGame CDN.
-- **Login/Registration errors (Rate Limit)**: If you get locked out during testing, the Adaptive Security Firewall may have banned your IP. You can flush your local Redis server using the command `redis-cli flushall`.
+---
 
-## 🤝 Contributing
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 👨‍💻 Author
+**Madhu Satish**
+- GitHub: [@Madhu-36](https://github.com/Madhu-36)
+- *Actively looking for Software Engineering roles.*
+
+---
+*If you are a recruiter reviewing this repository, thank you for your time. I am highly passionate about building scalable, user-centric software and would love to discuss how I can bring value to your engineering team.*
