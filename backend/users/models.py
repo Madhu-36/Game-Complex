@@ -23,6 +23,10 @@ class User(AbstractUser):
         null=True, 
         help_text="The user's profile picture."
     )
+    is_email_verified = models.BooleanField(
+        default=False,
+        help_text="Designates whether the user has verified their email address."
+    )
     
     def __str__(self):
         return self.username
