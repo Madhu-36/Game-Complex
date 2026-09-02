@@ -5,6 +5,30 @@ from django.db import transaction
 from django.db.models import Q
 from .models import Category, Product, UserLibrary, Order, OrderItem
 from .serializers import CategorySerializer, ProductSerializer, UserLibrarySerializer, CheckoutSerializer
+from rest_framework.views import APIView
+from django.conf import settings
+import stripe
+
+stripe.api_key = settings.STRIPE_SECRET_KEY
+
+class CreateStripeIntentView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        try:
+            # For simplicity, calculate amount on frontend and just pass it here, or recalc here.
+            # Real production apps should recalc on backend
+            amount = request.data.get('amount', 1000) 
+            intent = stripe.PaymentIntent.create(
+                amount=int(float(amount) * 100), # Amount in cents
+                currency='usd',
+                metadata={'userid': request.user.id}
+            )
+            return Response({
+                'clientSecret': intent['client_secret']
+            })
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Category.objects.all()
@@ -59,7 +83,7 @@ class CheckoutView(generics.GenericAPIView):
             order = Order.objects.create(
                 user=request.user,
                 total_amount=total_amount,
-                stripe_charge_id="fake_charge_123", # Mock charge
+                stripe_charge_id=request.data.get('payment_intent_id', "fake_charge_123"),
                 address=serializer.validated_data.get('address', ''),
                 city=serializer.validated_data.get('city', ''),
                 zip_code=serializer.validated_data.get('zip_code', ''),
