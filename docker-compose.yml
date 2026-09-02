@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=gamecomplex
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    command: >
+      bash -c "python manage.py migrate && 
+               gunicorn core.wsgi:application --bind 0.0.0.0:8000"
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/gamecomplex
+      - DEBUG=0
+      - SECRET_KEY=django-insecure-your-secret-key-here
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
